@@ -1,0 +1,249 @@
+/* -----------------------global style---------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    color: hsl(210, 10%, 33%);
+    font-family: "Jamjuree",sans-serif;
+    margin-bottom: 14px;
+}
+.par{
+    font-family: "Bai",sans-serif;
+    color: hsl(201, 11%, 66%);
+    line-height: 23px; 
+}
+/* -------------header style------------ */
+header{
+    background-image: url('./images/bg-header-desktop.png');
+    min-height: 25vh;
+    position: relative;
+    margin-bottom: 10px;
+}
+.logo-img{
+    width: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+/* --------------------------------style intro-------------------- */
+.intro-container{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.intro-container p{
+    margin-bottom: 40px;
+}
+.btn{
+    text-decoration: none;
+    font-family: "Jamjuree",sans-serif;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255);
+    border-bottom: 2px solid;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.btn-1{
+    background-color: rgba(38, 186, 164,0.89);
+    border-color: rgba(38, 186, 164);
+}
+.btn-2{
+    background-color: rgb(97, 115, 255,0.89);
+    border-color: rgb(97, 115, 255)
+}
+/* -----------------------------style div with the class text-container------------------ */
+.text-container{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+/* ----------------------------style div with class flex----------------------------*/
+.flex{
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.computer-container img{
+    display: block;
+    width: 40%;
+    position: relative;
+    left: -10px;
+}
+
+.asside-container{
+    width: 54%;
+}
+.asside-text h3{
+    margin-bottom: 4px;
+}
+.asside-text p{
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+.clipbord-container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.clipbord-container img{
+    display: block;
+    width: 100%;
+}
+.clipbord-container p{
+    margin-bottom: 20px;
+}
+/* --------------------------------------style section t-l------------------------ */
+.tools-intro{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.t-container{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.t-container div{
+    margin-right: 10px;
+}
+.t-container p{
+    font-size: 0.9rem;
+}
+.t-container div i img{
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.l-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.l-container img{
+    width: 70px;
+    margin-right: 10px;
+}
+.downloadapp-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+/* ------------------------------------style footer-----------------------------------*/
+footer{
+    background-color: #f2f2f2;
+    padding: 10px auto;
+}
+img.logo-footer{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    display: block;
+}
+.footer-div{
+    min-height: 140px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-div ul li a{
+    font-family: "Bai",sans-serif;
+    color: hsl(201, 11%, 66%);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.footer-div ul li a:hover{
+    opacity: 0.9;
+    border-bottom: 2px solid rgba(38, 186, 164);
+}
+.social-media-container{
+    display: flex;
+}
+.social-media-container img{
+    width: 14px;
+    margin-right: 4px;
+}
+@media (max-width: 600px) {
+
+    header .logo-img{
+        /* width: 50px; */
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .w-90{
+        width: 90%;
+    }
+    .btns-container .btn{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .flex{
+        display: block;
+        text-align: center;
+    }
+    .computer-container img{
+        position: static;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .asside-container{
+        width: 80%;margin: auto;
+    }
+    .t-container div{
+        margin-bottom: 20px;
+    }
+    .l-container img{
+        width: 120px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .downloadapp-container{
+        width: 85%;
+    }
+    .footer-div{
+        text-align: center;
+        padding: 25px;
+        line-height: 40px;
+    }
+    img.logo-footer{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .social-media-container{
+        width: 100px;
+        margin: auto;
+        justify-content: center;
+    }
+}
+@media (max-width: 360px) {
+    header{
+        background-image: url('./images/bg-header-mobile.png');
+    }
+}
